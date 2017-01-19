@@ -1,0 +1,34 @@
+{
+  "name": "reactify-preview-player",
+  "version": "1.0.0",
+  "description": "A React music preview player using Spotify Web API.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "deploy": "npm run build && git subtree push --prefix build origin gh-pages"
+  },
+  "keywords": [],
+  "author": "Derrick Blue",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-sound": "^0.5.2",
+    "spotify-web-api-js": "^0.21.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.16.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}
